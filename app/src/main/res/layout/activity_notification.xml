@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#969fdf">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="30dp"
+                  android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data::"
+            android:id="@+id/tv_registration_id"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:id="@+id/et_data"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:text=""
+            android:textSize="15sp"
+            android:editable="true"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND DATA FOR NOTIFICATION"
+        android:id="@+id/btn_send_notification"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/custom_button_selector_blue"
+        android:padding="8dp"/>
+</LinearLayout>

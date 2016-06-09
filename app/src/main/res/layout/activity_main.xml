@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#969fdf"
+              android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linlayout_topmargin"
+            android:background="#007100"
+            android:minHeight="50dp"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GCM PUSH NOTIFICATION DEMO"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER DEVICE"
+            android:id="@+id/btn_register"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/custom_button_selector_blue"
+            android:padding="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNREGISTER DEVICE"
+            android:id="@+id/btn_unregister"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/custom_button_selector_blue"
+            android:padding="10dp"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginTop="30dp"
+                      android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Device GCM Registration ID:"
+                android:id="@+id/tv_registration_id"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_marginTop="30dp"
+                android:id="@+id/et_registration_details"
+                android:layout_gravity="center_horizontal"
+                android:background="#ffffff"
+                android:text="API registration id will go here..."
+                android:textSize="15sp"
+                android:editable="true"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO FOR NOTIFICATION"
+            android:id="@+id/btn_notification"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/custom_button_selector_green"
+            android:padding="10dp"/>
+    </LinearLayout>
+</ScrollView>
